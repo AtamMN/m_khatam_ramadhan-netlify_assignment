@@ -9,47 +9,47 @@
 </head>
 <body>
     <!-- Header Section Start -->
-    <Header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
-        <div class="container ">
+    <Header class="top-0 left-0 w-full items-center sticky z-10">
+        <div class="container-header bg-transparent bg-gradient-to-l from-sky-800 to-slate-900">
             <div class="items-center justify-between relative">
-                <div class="flex items-center mt-3">
+                <div class="flex items-center py-2">
                     <div class="flex">
                         <div class="px-4">
-                            <img class="h-12 rounded-full  object-cover " src="../assets/pic.jpg"  alt="">
+                            <img class="h-12 rounded-full object-cover" src="../assets/pic.jpg"  alt="">
                         </div>
                         <div class="px-4">
-                            <a href="#hero" class="font-bold text-lg text-purple-500 py-6">ATAM'S PROTOFOLIO</a>
-                            <p>Author</p>
+                            <a href="#hero" class="font-bold text-lg text-white py-6">ATAM'S <span class="font-bold text-sky-500">PROTOFOLIO</span> </a>
+                            <p class="text-sky-500">Author</p>
                         </div>
                     </div>
-                    <div class="flex items-center px-4">
-                        <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-
                     </div>
                 </div>
             </div>
         </div>
-
+        
+        <Nav class="bg-transparent bg-slate-900 block top-0 left-0 py-2 w-full items-center z-10 justify-between">
+            <div class="flex justify-evenly relative gap-2">
+                <div><a href="#about-me">About Me</a></div>
+                <div><a href="#experience">Experience</a></div>
+                <div><a href="#contact">Contact</a></div>
+            </div>
+        </Nav>
     </Header>
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-    <section id="hero" class="pt-36">
-        <div class="container">
+    <section id="hero" class="pt-5 bg-[url('https://64.media.tumblr.com/bde83f787eb2843798d5d24910d54e6e/f145147b69889cf3-79/s500x750/6e525d0c40de1966ec99054483019552d771d529.gifv')]">
+        <div class="container-hero">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-purple-700">Welcome to my Portofolio! <span class="block font-bold text-slate-900 text-3xl">I'm Muhammad Khatam Ramadhan</span></h1>
+                    <h1 class="text-base font-semibold text-purple-700">Welcome to my Portofolio! <span class="block font-bold text-white text-3xl">I'm Muhammad Khatam Ramadhan</span></h1>
                     <h2 class="font-medium text-slate-500 text-lg mb-5">Front-End Web Developer</h2>
                     <p class="font-medium text-slate-400 mb-10 leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, doloremque.</p>
                     <a href="#" class="text-base font-semibold text-white bg-purple-700 py-3 px-8 rounded-full hover:shadow-lg hover:opacity-70 transition duration-300 ease-in-out">Contact Me!</a>
                 </div>
-                <div class="w-full self-end px-4">
-                    <div class="relative mt-10">
-                        <img src="../assets/avatar.jpg" alt="ava2" class="max-w-full mx-auto rounded-t-full">
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 mb-4">
+                        <img src="../assets/ava2.png" alt="ava2" class="max-w-full mx-auto rounded-t-full lg:w-[75%]">
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
 
     
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-20 pb-32">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -86,6 +86,51 @@
     </section>
     <!-- About Section End -->
     
+
+    <!-- Form Section Start -->
+    <section id="form" class="bg-sky-800 ">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="mt-5 md:col-span-2 md:mt-0">
+                <form action="#" method="POST">
+                <div class="shadow bg-sky-800 sm:overflow-hidden sm:rounded-md">
+                    <div class="space-y-6 bg- px-4 py-5 sm:p-6">
+
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="col-span-3 sm:col-span-2">
+                                <label for="company-website" class="block text-sm font-medium text-sky-500">Name</label>
+                                <div class="mt-1 flex rounded-md shadow-sm">
+                                    <input type="text" name="company-website" id="company-website" class="block w-full flex-1 rounded-sm border-sky-500 focus:border-sky-500 focus:ring-sky-500 sm:text-sm" placeholder="Please enter your name here :)">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="col-span-3 sm:col-span-2">
+                                <label for="company-website" class="block text-sm font-medium text-gray-700">Email</label>
+                                <div class="mt-1 flex rounded-md shadow-sm">
+                                    <input type="email" name="company-website" id="company-website" class="block w-full flex-1 rounded-sm border-sky-500 focus:border-sky-500 focus:ring-sky-500 sm:text-sm" placeholder="Please enter your email here :)">
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div>
+                            <label for="about" class="block text-sm font-medium text-gray-700">Message</label>
+                            <div class="mt-1">
+                                <textarea id="about" name="about" rows="3" class="mt-1 block w-full rounded-md border-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm" placeholder="write down your message here ^^"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="px-4 py-3 text-right sm:px-6">
+                            <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Submit</button>
+                        </div>
+
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form Section End -->
 
 </body>
 </html>
